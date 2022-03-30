@@ -1,38 +1,124 @@
-.App {
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background-color: #fff9df;
+}
+
+.header_font {
+  font-family: "Dela Gothic One", cursive;
+}
+
+.grid_container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 33% 33% 33% 1%;
+}
+
+.left_container {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  margin: 50px 50px 100px 100px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image_container {
+  grid-column: 2/ 4;
+  grid-row: 2 / 3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.donation_image {
+  width: 32vw;
+  height: 81vh;
+  margin: -11px -353px 115px 160px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#donate_button {
+  background-color: #1fb57f;
   color: white;
+  position: relative;
+  top: -332px;
+  left: -175px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-control {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* The Modal (background) */
+.modal_intent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.modal_intent_content {
+  background-color: white;
+  width: 30%;
+  height: 55%;
+  margin: auto;
+  margin-top: 180px;
+  border-radius: 1rem;
+}
+
+.modal_btn_close {
+  margin-left: 455px;
+  height: 30px;
+  padding: 1em;
+}
+
+.modal_confirmation_button {
+  background-color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 1rem;
+  margin-left: 5px;
+}
+
+.modal_close {
+  background-color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 1rem;
+}
+
+.modal_submit {
+  background-color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 1rem;
+  margin-left: 5px;
+}
+
+a:link,
+a:visited {
+  background-color: #1fb57f;
+  color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: #1fb57f;
 }
